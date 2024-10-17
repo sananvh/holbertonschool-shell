@@ -1,8 +1,2 @@
 #!/bin/bash
-# Script to print the absolute path of the current working directory
-print The path to the directory
-/n
 pwd
-/n
-"wd/n\n"
-"n\\n\"\n"
