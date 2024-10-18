@@ -1,2 +1,2 @@
 #!/bin/bash
-cp "$file" "../$file"
+rm -rf /tmp/*.html ; rm -rf /tmp/test_html ; mkdir /tmp/test_html ; touch /tmp/test_html/file_0.html ; cp -u /tmp/test_html/*.html /tmp/ ; ls -l --time-style='''+''' /tmp/*.html
