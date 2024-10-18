@@ -1,2 +1,2 @@
 #!/bin/bash
-[ -e hello ] && [ "$(stat -c '%U' hello)" = "guillaume" ] && chown vincent hello
+[ -e hello ] chown vincent hello
