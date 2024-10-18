@@ -1,2 +1,2 @@
 #!/bin/bash
-userdel betty && rm hello'"'"'
+chown betty rm hello
