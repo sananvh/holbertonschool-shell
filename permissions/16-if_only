@@ -1,2 +1,56 @@
 #!/bin/bash
-chown vincent hello
+
+# Check if the file 'hello' exists and is owned by guillaume
+if [ -e hello ] && [ $(stat -c '%U' hello) = "guillaume" ]; then
+    # Change owner to vincent
+    chown vincent hello
+    echo "Owner of 'hello' changed to vincent"
+else
+    echo "No change: 'hello' does not exist or is not owned by guillaume"
+fi
+
+# Display the current ownership of the file
+ls -l hello
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+~                                                                                                                                                                                
+-- INSERT --                                                                                                                                                   1,1           All
