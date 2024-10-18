@@ -1,18 +1,2 @@
 #!/bin/bash
-
-# Loop through all HTML files in the current directory
-for file in *.html; do
-    # Check if the file exists
-    if [ -f "$file" ]; then
-        # Check if the file doesn't exist in the parent directory or is newer
-        if [ ! -f "../$file" ] || [ "$file" -nt "../$file" ]; then
-            # Copy the file to the parent directory
-            cp "$file" "../$file"
-            echo "Copied $file to parent directory"
-        else
-            echo "Skipped $file (already exists and is not newer)"
-        fi
-    fi
-done
-
-echo "HTML file copy process completed"
+cp "$file" "../$file"
