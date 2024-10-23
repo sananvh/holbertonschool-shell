@@ -1,2 +1,4 @@
 #!/bin/bash
-set && env && declare -F | cut -d' ' -f3
+set
+env
+declare -F | cut -d' ' -f3
